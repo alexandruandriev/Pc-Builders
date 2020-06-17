@@ -32,16 +32,11 @@ return(
     renderItem={item => (
       <List.Item
         key={item.title}
-        actions={[
-          <IconText icon={StarOutlined} text="156" key="list-vertical-star-o" />,
-          <IconText icon={LikeOutlined} text="156" key="list-vertical-like-o" />,
-          <IconText icon={MessageOutlined} text="2" key="list-vertical-message" />,
-        ]}
         extra={
           <img
             width={272}
             alt="logo"
-            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+            src="https://3.grgs.ro/images/products/1/5758/1943898/full/fury-black-4gb-ddr4-2666mhz-cl16-8cae97725daa0061cf8c9b193c52a62d.jpg"
           />
         }
       >
@@ -50,7 +45,7 @@ return(
           title={<a href={item.href}>{item.title}</a>}
           description={item.description}
         />
-        {item.content}
+          {item.content}
       </List.Item>
     )}
   />
