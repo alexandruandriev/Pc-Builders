@@ -6,7 +6,9 @@ If you just cloned the repo from github than you have to:
 <
  <li> 
  Open a terminal and go to /frontend/my-app/ and run 
-       <p>npm install<p/>
+ 	<p>
+ 	npm install
+ 	<p/>
  <li/>
  Open a terminal and run <source ./backend/bin/activate> , than install the requirements by typing <pip install -r REQUIREMENTS.TXT>
 <ol>
