@@ -1,0 +1,25 @@
+#!/bin/bash
+ORIGINAL_PATH=$(pwd)
+
+
+main(){
+  start_enviroment
+}
+start_enviroment(){
+   
+   cd ./frontend/my-app
+   
+   gnome-terminal -- bash -c  "npm start; exec bash"
+ 
+   cd $ORIGINAL_PATH
+   :
+   source ./backend/bin/activate
+	gnome-terminal -- bash -c  "source ./backend/bin/activate;python ./backend/mysite/manage.py migrate; python ./backend/mysite/manage.py makemigrations; python ./backend/mysite/manage.py runserver; exec bash"
+       echo "Trying to start development server.."
+   echo "Sucesfully deployed developemnt website"
+
+      
+}
+	  
+
+main
