@@ -1,6 +1,9 @@
 
 ## Pc-Builders
 Pc-Builders website's source code for developing.
+## Requirements:
+ - Python 3.8.2
+ - Node.js 
 ## Linux:
 **If you just cloned the repo from github than you have to:**
 
