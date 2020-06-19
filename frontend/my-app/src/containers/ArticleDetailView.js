@@ -1,14 +1,14 @@
 import React from 'react';
 import Article from '../components/Article';
-import CostumForm from '../components/Form'
-import axios from 'axios'
-
-class ArticleList extends React.Component {
+import CostumForm from '../components/Form';
+import axios from 'axios';
+import {Card} from 'antd';
+class ArticleDetail extends React.Component {
      state  = { 
         article:{} 
      }
      componentDidMount(){
-         const articleid = this.props.match.params.articleid;
+         const articleid = this.props.match.params.articleID;
          axios.get(`http://127.0.0.1:8000/api/${articleid}/`).then(res =>{
              this.setState({
                 article: res.data
@@ -31,4 +31,4 @@ class ArticleList extends React.Component {
         );
     }
 }
-export default ArticleList;
+export default ArticleDetail;
